@@ -11,7 +11,7 @@ See the example input data `input_dois.xlsx`. This was a list of DOIs generated 
 
 ## Output data
 
-A new file `output.xslx` will be generated with the Dataset DOIs and Dataset Titles returned by the Scholix API. Note that this file can contain duplicate DOIs (where Scholix returned multiple links).
+A new file `output.xlsx` will be generated with the Dataset DOIs and Dataset Titles returned by the Scholix API. Note that this file can contain duplicate DOIs (where Scholix returned multiple links).
 
 ## Example usage:
 
