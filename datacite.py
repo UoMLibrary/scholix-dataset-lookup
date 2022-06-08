@@ -49,7 +49,7 @@ def render(doi, metadata, publications):
 		print('\tXML Error - default:resource')
 		return
 
-	file = open(file_path, 'w')
+	file = open(file_path, 'w', encoding='utf-8')
 
 	file.write('<html><head>')
 	file.write('<meta charset="UTF-8">')
@@ -175,7 +175,7 @@ def get_datacite_metadata(doi):
 	return r.json()
 
 # Get input DOIs from excel file
-df = pandas.read_excel(input_filename, encoding = 'ISO-8859-1')
+df = pandas.read_excel(input_filename)
 df = df.where(pandas.notnull(df), None)
 data = df.to_dict()
 records = []

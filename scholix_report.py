@@ -84,7 +84,7 @@ def parse_result(doi, data):
   return result
 
 # Get input DOIs from excel file
-df = pandas.read_excel('input_dois.xlsx', encoding = 'ISO-8859-1')
+df = pandas.read_excel('input_dois.xlsx')
 raw_doi_list = df['DOI'].tolist()
 doi_list = list(set(raw_doi_list))
 
